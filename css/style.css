@@ -11,10 +11,23 @@ a{
     padding: 7px;
     background-color: blueviolet;
     white-space: nowrap;
+    margin: 10px 2px;
+    display: inline-block;
+    align-content: center;
+}
+span{
+    font-size: 12px;
+    padding: 8px;
+    border: solid 1px grey;
+    border-radius: 20px;
+    background-color: rgb(41, 41, 41);
+    display: inline-block;
+    margin: 10px 0px;
 }
 h1{
     font-size: 12px;
-    color: white
+    color: white;
+    align-self: center;
 }
 strong{
     background: linear-gradient(90deg,rgba(93, 222, 222, 1) 0%, rgba(237, 83, 234, 1) 100%);
@@ -26,6 +39,12 @@ h2{
 }
 h3{
     font-size: 36px;
+    display: inline-block;
+    background-image: linear-gradient(90deg,rgba(0, 220, 232, 1) 0%, rgba(194, 0, 219, 1) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 3px;
+    background-position: bottom;
+    margin-bottom: 20px;
 }
 h4{
     font-size: 24px;
@@ -44,13 +63,17 @@ section{
     display: flex;
     justify-content: space-between;
     background-color: black;
-    padding: 20px;
+    padding: 10px;
+    padding-left: 30px;
+    position: sticky;
+    top: 0;
 }
 .index_menu_button{
     padding: 10px;
     background-color: black;
     text-decoration: none;
     color: white;
+    margin: 0px;
 }
 .index_menu_button:hover{
     background-color: rgb(45, 109, 45);
@@ -72,9 +95,8 @@ section{
 }
 .main_arg a{
     text-decoration: none;
-    background-color: gray;
+    background-color: rgb(45, 109, 45);
     color: white;
-    margin: 20px 0px;
 }
 .sec_main img{
     width: 500px;
@@ -88,18 +110,22 @@ section{
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.release_head{
+    display: flex;
+    justify-content: space-between;
+}
+.release_head a{
+    border-radius: 2em;
+    padding: 0 10px;
+}
 .release_sec{
     background: linear-gradient(0deg,rgba(0, 0, 0, 1) 14%, rgba(0, 43, 1, 1) 61%, rgba(0, 97, 27, 1) 100%);
 }
 .release_card{
-    width: 15%;
+    width: 19%;
     background-color: rgb(34, 34, 34);
     margin: 10px 2px;
-    border-radius: 10px;
-    padding: 10px;
-}
-.release_card a{
-    margin: 10px 0px;
+    border-radius: 15px;
 }
 .release_card img{
     width: 100%;
@@ -108,9 +134,26 @@ section{
     justify-self: center;
     object-fit: cover;
     overflow: hidden;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.release_card_info{
+    padding: 10px;
+}
+.release_card_info p:first-of-type{
+    font-style: italic;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.release_card_info p+p{
+    font-size: 16px;
 }
 .artist_sec{
     background: linear-gradient(0deg,rgba(0, 0, 0, 1) 14%, rgba(92, 3, 83, 1) 61%, rgba(146, 0, 166, 1) 100%);
+}
+.artist_head{
+    display: flex;
+    justify-content: space-between;
 }
 .artist_div{
     display: grid;
@@ -141,7 +184,7 @@ section{
 .festival_space{
     display: flex;
     justify-content: space-evenly;
-    gap: 10px 10%;
+    gap: 3%;
 }
 .festival_div{
     display: flex;
@@ -156,11 +199,19 @@ section{
 .festival_card{
     background-color: rgb(44, 44, 44);
     border-radius: 15px;
-    padding: 20px;
 }
 .festival_card img{
     width: 100%;
-    height: auto;
+    height: 40%;
+    aspect-ratio: 1/1;
+    justify-self: center;
+    object-fit: cover;
+    overflow: hidden;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.festival_card_info{
+    padding: 15px;
 }
 .festival_card h5{
     color: white;
@@ -171,13 +222,13 @@ section{
     font-size: 12px;
 }
 .festival_aside{
-    background-color: rgb(51, 51, 51);
-    width: 20%;
+    background-color: rgb(34, 12, 95);
+    width: 30%;
     padding: 20px;
     border-radius: 20px;
 }
 .promos_card{
-    background-color: rgb(140, 226, 173);
+    background-color: rgb(69, 63, 71);
     padding: 10px 10px;
     border-radius: 15px;
     margin: 10px;
