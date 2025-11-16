@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h2, h3, h4, a, p, span{
+    color: white;
+    text-decoration: none;
+}
+a{
+    border-radius: 10px;
+    padding: 7px;
+    background-color: blueviolet;
+    white-space: nowrap;
+}
+h1{
+    font-size: 12px;
+    color: white
+}
+strong{
+    background: linear-gradient(90deg,rgba(93, 222, 222, 1) 0%, rgba(237, 83, 234, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h2{
+    font-size: 48px;
+}
+h3{
+    font-size: 36px;
+}
+h4{
+    font-size: 24px;
+}
+h5{
+    font-size: 20px;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+section{
+    padding: 80px 15%;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 20px;
+}
+.index_menu_button{
+    padding: 10px;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+}
+.index_menu_button:hover{
+    background-color: rgb(45, 109, 45);
+    border-radius: 15px;
+}
+
+.sec_main{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(0deg,rgba(0, 0, 0, 1) 14%, rgba(9, 9, 121, 1) 61%, rgba(144, 0, 255, 1) 100%);
+    gap: 100px;
+}
+.main_arg{
+    align-content: center;
+    width: 50%;
+}
+.main_arg p{
+    margin-bottom: 20px;
+}
+.main_arg a{
+    text-decoration: none;
+    background-color: gray;
+    color: white;
+    margin: 20px 0px;
+}
+.sec_main img{
+    width: 500px;
+    height: 500px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: 110%;
+}
+.release_div{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.release_sec{
+    background: linear-gradient(0deg,rgba(0, 0, 0, 1) 14%, rgba(0, 43, 1, 1) 61%, rgba(0, 97, 27, 1) 100%);
+}
+.release_card{
+    width: 15%;
+    background-color: rgb(34, 34, 34);
+    margin: 10px 2px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.release_card a{
+    margin: 10px 0px;
+}
+.release_card img{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    justify-self: center;
+    object-fit: cover;
+    overflow: hidden;
+}
+.artist_sec{
+    background: linear-gradient(0deg,rgba(0, 0, 0, 1) 14%, rgba(92, 3, 83, 1) 61%, rgba(146, 0, 166, 1) 100%);
+}
+.artist_div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px 15px;
+}
+.artist_card{
+    background-color: rgb(99, 80, 80);
+    padding: 15px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.artist_card img{
+    width: 40%;
+    height: auto;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+}
+.artist_info{
+    margin-left: 15px;
+    overflow: auto;
+}
+.festival_sec{
+    background-color: rgb(0, 0, 0);
+}
+.festival_space{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px 10%;
+}
+.festival_div{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    background-color: rgb(70, 4, 59);
+    gap: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    height: fit-content;
+}
+.festival_card{
+    background-color: rgb(44, 44, 44);
+    border-radius: 15px;
+    padding: 20px;
+}
+.festival_card img{
+    width: 100%;
+    height: auto;
+}
+.festival_card h5{
+    color: white;
+    margin: 20px 0px;
+}
+.festival_card p{
+    margin: 20px 0px;
+    font-size: 12px;
+}
+.festival_aside{
+    background-color: rgb(51, 51, 51);
+    width: 20%;
+    padding: 20px;
+    border-radius: 20px;
+}
+.promos_card{
+    background-color: rgb(140, 226, 173);
+    padding: 10px 10px;
+    border-radius: 15px;
+    margin: 10px;
+}
+.top10_sec{
+    background-color: rgb(0, 0, 44);
+}
+.top10_list{
+    display: grid;
+    grid-template-rows:  repeat(5, auto);
+    grid-auto-flow: column;
+    gap: 10px;
+}
+.top10_card{
+    width: 45%;
+}
+.footer_home{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+.footer_home *{
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+}
+.links a{
+    margin: 0px 3px;
+}
