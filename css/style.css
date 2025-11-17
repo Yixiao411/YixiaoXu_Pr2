@@ -2,7 +2,7 @@
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-h2, h3, h4, a, p, span{
+h2, h3, h4, h5, a, p, span{
     color: white;
     text-decoration: none;
 }
@@ -55,6 +55,7 @@ h5{
 img{
     width: 100px;
     height: 100px;
+    aspect-ratio: 1/1;
 }
 section{
     padding: 80px 15%;
@@ -78,4 +79,18 @@ section{
 .index_menu_button:hover{
     background-color: rgb(45, 109, 45);
     border-radius: 15px;
+}
+.footer_home{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+.footer_home *{
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+}
+.links a{
+    margin: 0px 3px;
 }
