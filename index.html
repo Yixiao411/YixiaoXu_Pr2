@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web SoundPopITB</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,12 +15,12 @@
 <body>
     <header class="menu">
         <h1>Sound<strong>PopITB</strong></h1>
-        <div>
+        <nav>
             <a class="index_menu_button" href="index.html">Home</a>
-            <a class="index_menu_button" href="festivales.html">Festivales / Música y grupos</a>
+            <a class="index_menu_button" href="festivales.html">Festivales / Música</a>
             <a class="index_menu_button" href="detalle.html">Detalle</a>
             <a class="index_menu_button" href="alta.html">Darse de Alta</a>
-        </div>
+        </nav>
     </header>
 
     <main>
@@ -47,7 +48,7 @@
     </main>
 
     <section class="release_sec">
-        <header class="release_head">
+        <header class="sec_head">
             <h3>Lanzamientos</h3>
             <a>Ver todo</a>
         </header>
@@ -155,7 +156,7 @@
     </section>
 
     <section class="artist_sec">
-        <header class="artist_head">
+        <header class="sec_head">
             <h3>Artistas Destacados</h3>
             <a href="">Ver Ranking</a>
         </header>
@@ -235,7 +236,10 @@
     </section>
 
     <section class="festival_sec">
-        <h3>Festivales</h3>
+        <header class="sec_head">
+            <h3>Festivales</h3>
+            <a href="">Barcelona</a>
+        </header>
         <div class="festival_space">
             <div class="festival_div">
                 <article class="festival_card">
@@ -243,7 +247,7 @@
                     <div class="festival_card_info">
                         <h5>J-Pop Summer Vibes 2025</h5>
                         <p>Tokyo Dome, Japón | Fechas: 10 – 12 agosto 2025</p>
-                        <p>J-Pop, Anime Music, Pop Rock, Story Music</p>
+                        <span>J-Pop</span><span>Pop Rock</span><span>Story Music</span>
                     </div>
                 </article>
 
@@ -252,7 +256,7 @@
                     <div class="festival_card_info">
                         <h5>Anime Music Festival 2025</h5>
                         <p>Ubicación: Osaka, Japón | Fechas: 15 – 17 julio 2025</p>
-                        <p>Tags: J-Pop, Anime Theme, Pop Rock, Story Music</p>
+                        <span>J-Pop</span><span>Anime Theme</span><span>Pop Rock</span><span>Story Music</span>
                     </div>
                 </article>
 
@@ -261,29 +265,33 @@
                     <div class="festival_card_info">
                         <h5>Electro Pop Night 2025</h5>
                         <p>Lugar: Yokohama Arena, Japón | Fechas: 22 – 24 septiembre 2025</p>
-                        <p>Tags: Electro Pop, Future Pop, Dance, Visuals</p>
+                        <span>Electro Pop</span><span>Future Pop</span><span>Dance</span><span>Visuals</span>
                     </div>
                 </article>
             </div>
             <aside class="festival_aside">
-                <h3>Promos</h3>
                 <article class="promos_card">
                     <img src="img/Lisent_Spotify.jpg" alt="Escucha en Spotify">
-                    <h5>Escucha en Spotify</h5>
-                    <p>Disfruta de los éxitos más escuchados de J-Pop y anime music en nuestro playlist oficial de
-                        Spotify.
-                    </p>
-                    <a href="https://open.spotify.com/">Ir a Spotify</a>
+                    <div class="festival_card_info">
+                        <h5>Escucha en Spotify</h5>
+                        <p>Disfruta de los éxitos más escuchados de J-Pop y anime music en nuestro playlist oficial de
+                            Spotify.
+                        </p>
+                        <a href="https://open.spotify.com/">Ir a Spotify</a>
+                    </div>
                 </article>
 
                 <article class="promos_card">
                     <img src="img/Jpop_radio.jpg" alt="J-Pop Radio Online">
-                    <h5>Sintoniza J-Pop Radio</h5>
-                    <p>Escucha las mejores canciones de Vaudy, LiSA, Milet y más en nuestra radio online especializada
-                        en
-                        J-Pop.
-                    </p>
-                    <a href="https://www.jpopradio.com/">Ir a la Radio</a>
+                    <div class="fe">
+                        <h5>Sintoniza J-Pop Radio</h5>
+                        <p>Escucha las mejores canciones de Vaudy, LiSA, Milet y más en nuestra radio online
+                            especializada
+                            en
+                            J-Pop.
+                        </p>
+                        <a href="https://www.jpopradio.com/">Ir a la Radio</a>
+                    </div>
                 </article>
 
             </aside>
