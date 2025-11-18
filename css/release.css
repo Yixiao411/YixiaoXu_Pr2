@@ -4,35 +4,68 @@ h3{
     justify-self: center;
     margin-bottom: 1em;
 }
+img{
+    width: 75%;
+    height: auto;
+    border-radius: 2em;
+    aspect-ratio: 1/1;
+}
 .release_main{
     background: linear-gradient(0deg,black 15%, rgb(107, 35, 77) 60%, rgb(159, 30, 119) 100%);
+}
+.release_main::after {
+    content: "";
+    align-self: center;
+    position: absolute;
+    bottom: -40px;
+    left: 25%;
+    width: 50%; /* aquí defines el largo de la línea */
+    height: 3px;
+    background: linear-gradient(90deg, rgba(0, 220, 232, 1), rgba(194, 0, 219, 1));
 }
 .release_mainsec{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 .release_main img{
     width: 30%;
     height: auto;
+}
+.release_main_art *{
+    text-align: center;
+    justify-self: center;
+    margin: 20px 30px;
 }
 .release_body{
     display: flex;
     flex-direction: column;
     background: linear-gradient(0deg, black 10%, blueviolet 30%, rgb(206, 38, 218) 50%, blueviolet 80%, black 100%);
 }
+.release_body > a{
+    width: 20%;
+    padding: 1em 10px;
+    align-self: center;
+    text-align: center;
+    border-radius: 2em;
+    margin-top: 3em;
+}
 .release_snacbar{
     background-color: rgb(43, 43, 43);
     border: solid rgb(82, 82, 82) 1px;
     margin: 10px;
     border-radius: 2em;
-    padding: 1em;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
 }
-a{
-    border-radius: 2em;
+.release_snacbar * + *{
+    justify-self: center;
+}
+.release_snacbar a{
+    border-radius: 1.8em;
     width: 50px;
     height: 50px;
     text-align: center;
 }
+
