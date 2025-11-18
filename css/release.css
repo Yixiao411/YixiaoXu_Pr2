@@ -11,15 +11,16 @@ img{
     aspect-ratio: 1/1;
 }
 .release_main{
+    position: relative;
     background: linear-gradient(0deg,black 15%, rgb(107, 35, 77) 60%, rgb(159, 30, 119) 100%);
 }
 .release_main::after {
     content: "";
     align-self: center;
     position: absolute;
-    bottom: -40px;
+    bottom: 20px;
     left: 25%;
-    width: 50%; /* aquí defines el largo de la línea */
+    width: 50%;
     height: 3px;
     background: linear-gradient(90deg, rgba(0, 220, 232, 1), rgba(194, 0, 219, 1));
 }
@@ -27,6 +28,12 @@ img{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    background-color: rgb(155, 29, 29);
+    border: solid 2px rgb(255, 81, 81);
+    border-radius: 2em;
+    padding: 50px;
+    margin: 0 10%;
+    min-width: min-content;
 }
 .release_main img{
     width: 30%;
