@@ -24,8 +24,6 @@
         </nav>
     </header>
 
-
-
     <main>
         <section class="formulario_sec">
             <h3>Darse de Alta</h3>
@@ -43,12 +41,12 @@
                         <input type="text" id="correo" name="correo">
                         <br />
                         <label for="sexo">Sexo: </label>
-                        <input type="checkbox" id="hombre">
-                        <label for="hombre">Hombre</label>
-                        <input type="checkbox" id="mujer">
-                        <label for="mujer">Mujer</label>
-                        <input type="checkbox" id="otrosexo">
-                        <label for="otrosexo">Otre</label>
+                        <input type="radio" id="hombre" name="sexo">
+                        <label for="sexo">Hombre</label>
+                        <input type="radio" id="mujer" name="sexo">
+                        <label for="sexo">Mujer</label>
+                        <input type="radio" id="otrosexo" name="sexo">
+                        <label for="sexo">Otre</label>
                         <br />
                         <label for="idiomas">Idioma: </label>
                         <select name="language" id="lan">
@@ -61,10 +59,10 @@
                         <label for="fechaNacimeinto">Fecha de nacimeinto:</label>
                         <input type="date" id="fechaNacimeinto">
                         <br />
-                        <label for="documento">Documentación:</label>
+                        <label for="documento">Foto de Perfil:</label>
                         <input type="file" id="documento">
                         <br />
-                        <textarea rows="6" cols="50">Introduce un descripción</textarea>
+                        <textarea rows="6" cols="50" placeholder="Introduce un descripcion"></textarea>
                         <br />
                     </fieldset>
                 </form>
@@ -99,7 +97,7 @@
                     <input type="submit">
                 </form>
             </div>
-            
+
             <h3>Contact</h3>
             <div class="formulario_div">
                 <p>
@@ -130,7 +128,7 @@
                         <label for="telMail">Telefon/Email/Otros: </label>
                         <input type="text" id="telMail">
                         <br />
-                        <textarea rows="6" cols="50">Problema sugerida</textarea>
+                        <textarea rows="6" cols="50" placeholder="Problema sugerida"></textarea>
                     </fieldset>
                     <input type="submit">
                 </form>
