@@ -31,8 +31,8 @@
             <h3>Darse de Alta</h3>
             <div class="formulario_div">
                 <form action="/form_page.php">
-                    <fieldset name="fiel1" class="form_field">
-                        <legend>Información personal</legend>
+                    <fieldset name="personalInfo" class="form_field">
+                        <legend><b>Información personal</b></legend>
                         <label for="name">Nombre: </label>
                         <input type="text" id="name" name="name">
                         <br />
@@ -50,23 +50,7 @@
                         <input type="checkbox" id="otrosexo">
                         <label for="otrosexo">Otre</label>
                         <br />
-                        <label for="fechaNacimeinto">Fecha de nacimeinto:</label>
-                        <input type="date" id="fechaNacimeinto">
-                        <br />
-                        <label for="documento">Documentación:</label>
-                        <input type="file" id="documento">
-                        <br />
-                    </fieldset>
-                </form>
-                <form action="/form_page.php">
-                    <fieldset name="fiel2" class="form_field">
-                        <legend>Email</legend>
-                        <label for="email">Email: </label>
-                        <input type="text" id="email">
-                        <br />
-                        <label for="cemail">Confirmar email: </label>
-                        <input type="text" id="cemail">
-                        <br />
+                        <label for="idiomas">Idioma: </label>
                         <select name="language" id="lan">
                             <option>Inglés</option>
                             <option>Español</option>
@@ -74,30 +58,79 @@
                             <option>Francés</option>
                         </select>
                         <br />
-                        <label for="hora" id="hr">Sesión: </label>
-                        <input type="time" id="hr" name="hora">
+                        <label for="fechaNacimeinto">Fecha de nacimeinto:</label>
+                        <input type="date" id="fechaNacimeinto">
                         <br />
-                        <label for="dia" id="dia">Días de proyección:</label><br />
-                        <select multiple name="dia" id="dia">
-                            <option>Lunes</option>
-                            <option>Martes</option>
-                            <option>Miércoles</option>
-                            <option>Jueves</option>
-                            <option>Viernes</option>
-                            <option>Sabado</option>
-                            <option>Domingo</option>
-                        </select>
+                        <label for="documento">Documentación:</label>
+                        <input type="file" id="documento">
                         <br />
-                        <label for="colFondo" id="colFondo">Elige un color de fondo:</label>
-                        <input type="color" id="colFondo">
-                        <br />
-                        <label for="punt" id="puntuacion">Puntuación del público:</label>
-                        <input type="range" id="puntuacion" name="puntuacion" min="0" max="10">
-                        <br />
-
                         <textarea rows="6" cols="50">Introduce un descripción</textarea>
                         <br />
+                    </fieldset>
+                </form>
+                <form action="/form_page.php">
+                    <fieldset name="mail" class="form_field">
+                        <legend><b>Contact & Address</b></legend>
+                        <label for="email">Email: </label>
+                        <input type="text" id="email">
+                        <br />
+                        <label for="cemail">Confirmar email: </label>
+                        <input type="text" id="cemail">
+                        <br />
+                        <label for="phone" id="phone">Numero de telefono: </label>
+                        <input type="text" id="phone">
+                        <br />
+                        <label for="tVia" id="tVia">Tipo de via:</label><br />
+                        <select multiple name="tVia" id="tVia">
+                            <option>Calle</option>
+                            <option>Carrera</option>
+                            <option>Avenida</option>
+                            <option>Travesía</option>
+                            <option>Diagonal</option>
+                            <option>Paseo</option>
+                            <option>Plaza</option>
+                            <option>Ronda</option>
+                        </select>
+                        <br />
+                        <label for="nameVia" id="nameVia">Nombre de Via: </label>
+                        <input type="text" id="nameVia">
+                        <br />
+                    </fieldset>
+                    <input type="submit">
+                </form>
+            </div>
+            
+            <h3>Contact</h3>
+            <div class="formulario_div">
+                <p>
+                    En esta página puedes ponerte en contacto con nosotros de forma rápida y sencilla.
+                    Si tienes dudas, necesitas ayuda, quieres enviarnos una sugerencia o simplemente deseas compartir tu
+                    opinión, estaremos encantados de escucharte. Cada mensaje es revisado individualmente para ofrecerte
+                    una respuesta clara y personalizada.
+                    <br><br>
+                    Además, desde este apartado también puedes darte de alta en nuestro servicio. Si estás interesado en
+                    unirte, registrarte o solicitar acceso, utiliza el formulario disponible y te guiaremos durante el
+                    proceso.
+                    <br><br>
+                    Tu opinión y tu interés son muy importantes para nosotros: nos ayudan a mejorar y a ofrecerte una
+                    experiencia cada vez mejor.
+                    Completa el formulario y te responderemos lo antes posible.
+                </p>
+            </div>
 
+            <div class="formulario_div">
+                <form action="/form_page.php">
+                    <fieldset name="contact" class="form_field">
+                        <label for="name">Nombre: </label>
+                        <input type="text" id="name" name="name">
+                        <br />
+                        <label for="surname">Surname: </label>
+                        <input type="text" id="surname" name="surname">
+                        <br />
+                        <label for="telMail">Telefon/Email/Otros: </label>
+                        <input type="text" id="telMail">
+                        <br />
+                        <textarea rows="6" cols="50">Problema sugerida</textarea>
                     </fieldset>
                     <input type="submit">
                 </form>

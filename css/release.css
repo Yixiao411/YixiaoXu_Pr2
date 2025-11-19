@@ -39,12 +39,19 @@ img{
         visibility: hidden;
         height: 0;
     }
+    audio{
+        display: none;
+    }
 }
 .release_mainsec:hover{
     transform: scale(110%);
+    box-shadow: 0 3px 10px 1px red;
     p+p{
     visibility: visible;
     height: auto;
+    }
+    audio{
+        display: block;
     }
 }
 .release_main img{
@@ -56,6 +63,9 @@ img{
     text-align: center;
     justify-self: center;
     margin: 20px 30px;
+}
+.release_main_art > p{
+    font-style: italic;
 }
 .release_body{
     display: flex;

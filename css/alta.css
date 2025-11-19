@@ -2,18 +2,36 @@
     background: linear-gradient(0deg,  rgb(0, 0, 0), rgb(120, 0, 219));
 }
 .formulario_div{
-    background-color: rgb(105, 153, 121);
+    background-color: rgba(255, 255, 255, 0.356);
     padding: 5%;
-    border: 3px solid rgb(178, 237, 100);
     border-radius: 3em;
+    margin-top: 50px;
 }
 .formulario_div *{
     margin: 5px;
-}
-legend{
-    position: relative;
-    left: 20px;
+    border-radius: 1rem;
 }
 .form_field{
-    border-radius: 2em;
+    padding-left: 35px;
+}
+legend{
+    font-size: 24px;
+}
+input{
+    position: relative;
+    padding: 0.5rem;
+    border: none;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+}
+input[type="submit"]{
+    display: flex;
+    justify-self: flex-end;
+}
+h3{
+    margin-top: 5%;
+}
+.spans{
+    display: flex;
+    flex-wrap: wrap;
 }
