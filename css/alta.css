@@ -1,0 +1,19 @@
+.formulario_sec{
+    background: linear-gradient(0deg,  rgb(0, 0, 0), rgb(120, 0, 219));
+}
+.formulario_div{
+    background-color: rgb(105, 153, 121);
+    padding: 5%;
+    border: 3px solid rgb(178, 237, 100);
+    border-radius: 3em;
+}
+.formulario_div *{
+    margin: 5px;
+}
+legend{
+    position: relative;
+    left: 20px;
+}
+.form_field{
+    border-radius: 2em;
+}

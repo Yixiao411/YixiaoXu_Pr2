@@ -18,7 +18,7 @@ img{
     content: "";
     align-self: center;
     position: absolute;
-    bottom: 20px;
+    bottom: 15px;
     left: 25%;
     width: 50%;
     height: 3px;
@@ -34,12 +34,25 @@ img{
     padding: 50px;
     margin: 0 10%;
     min-width: min-content;
+    transition: 1s;
+    p+p{
+        visibility: hidden;
+        height: 0;
+    }
+}
+.release_mainsec:hover{
+    transform: scale(110%);
+    p+p{
+    visibility: visible;
+    height: auto;
+    }
 }
 .release_main img{
     width: 30%;
     height: auto;
 }
 .release_main_art *{
+    display: flex;
     text-align: center;
     justify-self: center;
     margin: 20px 30px;
@@ -59,12 +72,17 @@ img{
 }
 .release_snacbar{
     background-color: rgb(43, 43, 43);
-    border: solid rgb(82, 82, 82) 1px;
+    border: solid rgb(82, 82, 82) 2px;
     margin: 10px;
     border-radius: 2em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
+    transition: 0.5s;
+}
+.release_snacbar:hover{
+    transform: translateY(-5px);
+    box-shadow: 2px 2px 10px 5px cyan;
 }
 .release_snacbar * + *{
     justify-self: center;

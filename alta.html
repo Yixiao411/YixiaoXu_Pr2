@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web SoundPopITB</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/alta.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="menu">
+        <h1>Sound<strong>PopITB</strong></h1>
+        <nav>
+            <a class="index_menu_button" href="index.html">Home</a>
+            <a class="index_menu_button" href="release.html">Música</a>
+            <a class="index_menu_button" href="festivales.html">Festivales</a>
+            <a class="index_menu_button" href="alta.html">Darse de Alta</a>
+        </nav>
+    </header>
+
+
+
+    <main>
+        <section class="formulario_sec">
+            <h3>Darse de Alta</h3>
+            <div class="formulario_div">
+                <form action="/form_page.php">
+                    <fieldset name="fiel1" class="form_field">
+                        <legend>Información personal</legend>
+                        <label for="name">Nombre: </label>
+                        <input type="text" id="name" name="name">
+                        <br />
+                        <label for="surname">Apellido: </label>
+                        <input type="text" id="surname" name="surname">
+                        <br />
+                        <label for="correo">Correo: </label>
+                        <input type="text" id="correo" name="correo">
+                        <br />
+                        <label for="sexo">Sexo: </label>
+                        <input type="checkbox" id="hombre">
+                        <label for="hombre">Hombre</label>
+                        <input type="checkbox" id="mujer">
+                        <label for="mujer">Mujer</label>
+                        <input type="checkbox" id="otrosexo">
+                        <label for="otrosexo">Otre</label>
+                        <br />
+                        <label for="fechaNacimeinto">Fecha de nacimeinto:</label>
+                        <input type="date" id="fechaNacimeinto">
+                        <br />
+                        <label for="documento">Documentación:</label>
+                        <input type="file" id="documento">
+                        <br />
+                    </fieldset>
+                </form>
+                <form action="/form_page.php">
+                    <fieldset name="fiel2" class="form_field">
+                        <legend>Email</legend>
+                        <label for="email">Email: </label>
+                        <input type="text" id="email">
+                        <br />
+                        <label for="cemail">Confirmar email: </label>
+                        <input type="text" id="cemail">
+                        <br />
+                        <select name="language" id="lan">
+                            <option>Inglés</option>
+                            <option>Español</option>
+                            <option>Catalá</option>
+                            <option>Francés</option>
+                        </select>
+                        <br />
+                        <label for="hora" id="hr">Sesión: </label>
+                        <input type="time" id="hr" name="hora">
+                        <br />
+                        <label for="dia" id="dia">Días de proyección:</label><br />
+                        <select multiple name="dia" id="dia">
+                            <option>Lunes</option>
+                            <option>Martes</option>
+                            <option>Miércoles</option>
+                            <option>Jueves</option>
+                            <option>Viernes</option>
+                            <option>Sabado</option>
+                            <option>Domingo</option>
+                        </select>
+                        <br />
+                        <label for="colFondo" id="colFondo">Elige un color de fondo:</label>
+                        <input type="color" id="colFondo">
+                        <br />
+                        <label for="punt" id="puntuacion">Puntuación del público:</label>
+                        <input type="range" id="puntuacion" name="puntuacion" min="0" max="10">
+                        <br />
+
+                        <textarea rows="6" cols="50">Introduce un descripción</textarea>
+                        <br />
+
+                    </fieldset>
+                    <input type="submit">
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="footer_home">
+        <div>
+            <h2>Sound<strong>PopITB</strong></h2>
+            <address>2025 SoundPopITB · C/Aiguablava, 123 · Barcelona</address>
+        </div>
+        <div class="links">
+            <a href="https://www.instagram.com/">
+                Instagram
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://open.spotify.com/">
+                Spotify
+                <i class="fa-brands fa-spotify"></i>
+            </a>
+            <a href="https://twitter.com/">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+        </div>
+    </footer>
+</body>
