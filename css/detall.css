@@ -1,0 +1,13 @@
+.detall_sec{
+    background:linear-gradient(0deg, rgb(0, 0, 0) 0%, darkgreen 100%);
+}
+.detall_art{
+    display: flex;
+    justify-content: space-around;
+}
+.detall_art img{
+    width: 30%;
+    height: auto;
+    border-radius: 2em;
+    box-shadow: 0 0 10px 1px red;
+}
