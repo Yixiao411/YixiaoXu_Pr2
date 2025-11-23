@@ -90,6 +90,12 @@
     margin-left: 15px;
     overflow: auto;
 }
+.artist_info a{
+    all: unset;
+}
+.festival_card a{
+    all: unset;
+}
 .festival_sec{
     background-color: rgb(0, 0, 0);
 }
