@@ -36,8 +36,9 @@ img{
     min-width: min-content;
     transition: 1s;
     p+p{
-        visibility: hidden;
+        opacity: 0;
         height: 0;
+        transition: 0.25s;
     }
     audio{
         display: none;
@@ -47,7 +48,7 @@ img{
     transform: scale(110%);
     box-shadow: 0 3px 10px 1px red;
     p+p{
-    visibility: visible;
+    opacity: 1;
     height: auto;
     }
     audio{
